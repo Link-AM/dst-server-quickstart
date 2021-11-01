@@ -10,3 +10,8 @@ cd /D %SteamCMD_Location%"\steamapps\common\Don't Starve Together Dedicated Serv
 pause
 start dontstarve_dedicated_server_nullrenderer -console -cluster MyDediServer -shard Master
 start dontstarve_dedicated_server_nullrenderer -console -cluster MyDediServer -shard Caves
+
+:: \test\Regex_WorkshopID.txt    https://regex101.com/r/yZZh3i/1 
+:: apparantly batch findstr command does not work well with regex
+
+
