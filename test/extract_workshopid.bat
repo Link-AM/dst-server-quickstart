@@ -8,3 +8,4 @@ for /f delims^=^] %%a in ('findstr /r "workshop-" "modoverrides.lua" ') do (
 		echo !wsid!
 	))
 )
+pause
