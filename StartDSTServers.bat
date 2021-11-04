@@ -17,7 +17,7 @@ for /f delims^=^] %%a in ('findstr /r "workshop-" %modOverrides% ') do (
 	set match=%%a
 	(for /f delims^=^" %%b in ("!match:~13!") do (
 		set wsid=%%b
-		echo ServerModSetup("!wsid!")>> %serverSetup%
+		echo ServerModSetup("!wsid!"^)>> %serverSetup%
     ))
 )
 
