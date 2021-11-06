@@ -3,7 +3,7 @@
 ::______________________________________________________________________________________________
 ::
 ::	Adjust the folder locations as necessary for the following 3 variables (after the '=').
-
+::  Be sure to keep the quotation marks at the end of each line.
 
 
 set "SteamCMD_Location=C:\steamcmd"

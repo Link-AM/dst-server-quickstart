@@ -25,7 +25,7 @@
 
 7. [Download](https://github.com/Link-AM/dst-server-quickstart/archive/refs/heads/main.zip) or clone this git repository.
 
-8. Right click > Edit the StartDSTServers.bat and adjust the three variables as necessary.  Save it.
+8. Right click > Edit the StartDSTServers.bat and adjust the three variables as necessary.  Be sure to keep the quotation marks at the end of each line.  Save it.  
 ![Yes thats my Steam ID. Add me!](https://github.com/Link-AM/dst-server-quickstart/blob/main/img/locations.PNG)
 
 8. Close your text editor and double click StartDSTServers.bat to start your server.
