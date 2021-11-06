@@ -3,7 +3,8 @@
 ### This batch file automates the task of copying modoverrides.lua files into the dedicated server directory, and then importing the workshop-ids for each mod into the dedicated_server_mods_setup.lua
 
 ## Instructions:
-#### NOTE: Steps 1-5 taken from [Klei's Dedicated Server Quick Setup Guide - Windows](https://forums.kleientertainment.com/forums/topic/64212-dedicated-server-quick-setup-guide-windows/). If you have done this already then skip to [step 6](#this-is-where-steps-differ-from-kleis-instructions)
+#### **NOTE**: Steps 1-5 taken from **Klei's** [Dedicated Server Quick Setup Guide - Windows](https://forums.kleientertainment.com/forums/topic/64212-dedicated-server-quick-setup-guide-windows/). If you have done this already then skip to [Step 6](#this-is-where-steps-differ-from-kleis-instructions)
+<br/>
 
 1. Download and install SteamCMD: [Click here to download](https://developer.valvesoftware.com/wiki/SteamCMD) 
 <br/>
@@ -25,7 +26,8 @@
 ![](https://cdn.forums.klei.com/monthly_2019_09/mydediserver.png.8eebe8f3dea4d9b681f79f51f9a979ae.png)
 <br/>
 
-#### This is where steps differ from Klei's instructions
+### This is where steps differ from Klei's instructions
+
 6. Open Steam and start Don't Starve Together.  Click Host Game and setup a new game with any mods you want enabled.  Once the server is started, exit out and go back to Host Game.  Find your new server and click the folder icon to get the the folder location of your 'cluster'
 ![Open Steam and go to Host Game](https://github.com/Link-AM/dst-server-quickstart/blob/main/img/hostgame.PNG)
 <br/>
