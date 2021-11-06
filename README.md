@@ -1,6 +1,6 @@
 # dst-server-quickstart
 
-### This batch file automates the server host's task of copying the modoverrides.lua files into the MyDediServer and then importing the workshop-ids for each mod into the dedicated_server_mods_setup.lua
+### This batch file automates the task of copying modoverrides.lua files into the dedicated server directory, and then importing the workshop-ids for each mod into the dedicated_server_mods_setup.lua
 
 ## Instructions:
 #### NOTE: Steps 1-5 taken from [Klei's Dedicated Server Quick Setup Guide - Windows](https://forums.kleientertainment.com/forums/topic/64212-dedicated-server-quick-setup-guide-windows/). If you have done this already then skip to step #6
