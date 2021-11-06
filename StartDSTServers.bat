@@ -2,9 +2,6 @@
 set SteamCMD_Location="c:\steamcmd"
 
 
-:: \test\Regex_WorkshopID.txt    https://regex101.com/r/yZZh3i/1 
-:: apparantly batch findstr command does not work well with regex
-
 ::_______________________________________________________________________________________
 
 set modOverrides="test\modoverrides.lua"
