@@ -1,8 +1,9 @@
 # dst-server-quickstart
 
-##### This batch file automates the server host's task of copying the modoverrides.lua files into the MyDediServer and then importing the workshop-ids for each mod into the dedicated_server_mods_setup.lua
+### This batch file automates the server host's task of copying the modoverrides.lua files into the MyDediServer and then importing the workshop-ids for each mod into the dedicated_server_mods_setup.lua
 
-### Instructions (Steps 1-5 taken from [Klei](https://forums.kleientertainment.com/forums/topic/64212-dedicated-server-quick-setup-guide-windows/).  If you have done this already then skip to step #6)
+## Instructions:
+#### NOTE: Steps 1-5 taken from [Klei's Dedicated Server Quick Setup Guide - Windows](https://forums.kleientertainment.com/forums/topic/64212-dedicated-server-quick-setup-guide-windows/). If you have done this already then skip to step #6
 
 1. Download and install SteamCMD: [Click here to download](https://developer.valvesoftware.com/wiki/SteamCMD) 
 
@@ -20,12 +21,12 @@
 ![](https://cdn.forums.klei.com/monthly_2019_09/mydediserver.png.8eebe8f3dea4d9b681f79f51f9a979ae.png)
 
 6. Open Steam and start Don't Starve Together.  Click Host Game and setup a new game with any mods you want enabled.  Once the server is started, exit out and go back to Host Game.  Find your new server and click the folder icon to get the the folder location of your 'cluster'
-![Open Steam and go to Host Game](/img/hostgame.png)
+![Open Steam and go to Host Game](img/hostgame.png)
 
 7. [Download](https://github.com/Link-AM/dst-server-quickstart/archive/refs/heads/main.zip) or clone this git repository.
 
 8. Right click > Edit the StartDSTServers.bat and adjust the three variables as necessary.  Save it.
-![Add me on Steam!](/img/locations.png)
+![Yes thats my Steam ID. Add me!](img/locations.png)
 
 8. Close your text editor and double click StartDSTServers.bat to start your server.
-![Thats it!](/img/script.png)
+![Thats it!](img/script.png)
