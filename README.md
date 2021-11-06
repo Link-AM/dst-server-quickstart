@@ -21,12 +21,12 @@
 ![](https://cdn.forums.klei.com/monthly_2019_09/mydediserver.png.8eebe8f3dea4d9b681f79f51f9a979ae.png)
 
 6. Open Steam and start Don't Starve Together.  Click Host Game and setup a new game with any mods you want enabled.  Once the server is started, exit out and go back to Host Game.  Find your new server and click the folder icon to get the the folder location of your 'cluster'
-![Open Steam and go to Host Game](img/hostgame.png)
+![Open Steam and go to Host Game](https://github.com/Link-AM/dst-server-quickstart/blob/main/img/hostgame.PNG)
 
 7. [Download](https://github.com/Link-AM/dst-server-quickstart/archive/refs/heads/main.zip) or clone this git repository.
 
 8. Right click > Edit the StartDSTServers.bat and adjust the three variables as necessary.  Save it.
-![Yes thats my Steam ID. Add me!](img/locations.png)
+![Yes thats my Steam ID. Add me!](https://github.com/Link-AM/dst-server-quickstart/blob/main/img/locations.PNG)
 
 8. Close your text editor and double click StartDSTServers.bat to start your server.
-![Thats it!](img/script.png)
+![Thats it!](https://github.com/Link-AM/dst-server-quickstart/blob/main/img/script.PNG)
