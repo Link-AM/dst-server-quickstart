@@ -3,7 +3,7 @@
 ### This batch file automates the task of copying modoverrides.lua files into the dedicated server directory, and then importing the workshop-ids for each mod into the dedicated_server_mods_setup.lua
 
 ## Instructions:
-#### NOTE: Steps 1-5 taken from [Klei's Dedicated Server Quick Setup Guide - Windows](https://forums.kleientertainment.com/forums/topic/64212-dedicated-server-quick-setup-guide-windows/). If you have done this already then skip to [step 6](#### this-is-where-steps-differ-from-klei's-instructions)
+#### NOTE: Steps 1-5 taken from [Klei's Dedicated Server Quick Setup Guide - Windows](https://forums.kleientertainment.com/forums/topic/64212-dedicated-server-quick-setup-guide-windows/). If you have done this already then skip to [step 6](####this-is-where-steps-differ-from-klei's-instructions)
 
 1. Download and install SteamCMD: [Click here to download](https://developer.valvesoftware.com/wiki/SteamCMD) 
 
