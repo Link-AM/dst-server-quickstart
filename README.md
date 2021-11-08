@@ -3,7 +3,7 @@
 ### This batch file automates the task of copying modoverrides.lua files into the dedicated server directory, and then importing the workshop-ids for each mod into the dedicated_server_mods_setup.lua
 
 ## Instructions:
-#### **NOTE**: Steps 1-5 taken from **Klei's** [Dedicated Server Quick Setup Guide - Windows](https://forums.kleientertainment.com/forums/topic/64212-dedicated-server-quick-setup-guide-windows/). If you have done this already then skip to [Step 6](#this-is-where-steps-differ-from-kleis-instructions)
+#### NOTE: Steps 1-5 taken from Klei's [Dedicated Server Quick Setup Guide - Windows](https://forums.kleientertainment.com/forums/topic/64212-dedicated-server-quick-setup-guide-windows/). If you have done this already then skip to [Step 6](#this-is-where-steps-differ-from-kleis-instructions)
 <br/>
 
 1. Download and install SteamCMD: [Click here to download](https://developer.valvesoftware.com/wiki/SteamCMD) 
@@ -32,11 +32,12 @@
 ![Open Steam and go to Host Game](https://github.com/Link-AM/dst-server-quickstart/blob/main/img/hostgame.PNG)
 <br/>
 
-7. [Download](https://github.com/Link-AM/dst-server-quickstart/archive/refs/heads/main.zip) or clone this git repository.
+7. [Download](https://github.com/Link-AM/dst-server-quickstart/archive/refs/heads/main.zip) or clone this git repository.  The directory you save to does not matter as long as it is on the same drive as your *MyDediServer* folder.
 <br/>
 
-8. Right click > Edit the StartDSTServers.bat and adjust the three variables as necessary.  Be sure to keep the quotation marks at the end of each line.  Save it.  
+8. Right click > Edit the StartDSTServers.bat and adjust the three variables as necessary (be sure to keep the quotation marks at the end of each line), then save it.
 ![Yes thats my Steam ID. Add me!](https://github.com/Link-AM/dst-server-quickstart/blob/main/img/locations.PNG)
+**NOTE:** Do not move this file anywhere, be sure to keep it where it is!  It will need to reference the local template folder.
 <br/>
 
 8. Close your text editor and double click StartDSTServers.bat to start your server.
