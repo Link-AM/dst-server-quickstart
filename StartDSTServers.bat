@@ -7,8 +7,8 @@
 
 
 set "SteamCMD_Location=C:\steamcmd"
-set "Cluster_Location=C:\Users\alexl\Documents\Klei\DoNotStarveTogether\94654202\Cluster_1"
-set "DediServer_Location=C:\Users\alexl\Documents\Klei\DoNotStarveTogether\MyDediServer"
+set "Cluster_Location=C:\Users\link\Documents\Klei\DoNotStarveTogether\94654202\Cluster_1"
+set "DediServer_Location=C:\Users\link\Documents\Klei\DoNotStarveTogether\MyDediServer"
 
 
 
@@ -28,16 +28,26 @@ echo.
 set "cmdDir=%SteamCMD_Location%\steamapps\common\Don't Starve Together Dedicated Server"
 set "binDir=%cmdDir%\bin"
 set "serverLua=%cmdDir%\mods\dedicated_server_mods_setup.lua"
-set "masterLua=\Master\modoverrides.lua"
-set "cavesLua=\Caves\modoverrides.lua"
+set "masterModLua=\Master\modoverrides.lua"
+set "masterDataLua=\Master\leveldataoverride.lua"
+set "cavesModLua=\Caves\modoverrides.lua"
+set "cavesDataLua=\Caves\leveldataoverride.lua"
 
 ::	Copy modoverrides.lua from the Master folder
-echo. && echo Copy "%Cluster_Location%%masterLua%" to "%DediServer_Location%%masterLua%"
-copy /b/v/y "%Cluster_Location%%masterLua%" "%DediServer_Location%%masterLua%"
+echo. && echo Copy "%Cluster_Location%%masterModLua%" to "%DediServer_Location%%masterModLua%"
+copy /b/v/y "%Cluster_Location%%masterModLua%" "%DediServer_Location%%masterModLua%"
+
+::	Copy leveldataoverride.lua from the Master folder
+echo. && echo Copy "%Cluster_Location%%masterDataLua%" to "%DediServer_Location%%masterDataLua%"
+copy /b/v/y "%Cluster_Location%%masterDataLua%" "%DediServer_Location%%masterDataLua%"
 
 ::	Copy modoverrides.lua from the Caves folder
 echo. && echo Copy "%Cluster_Location%%cavesLua%" to "%DediServer_Location%%cavesLua%"
 copy /b/v/y "%Cluster_Location%%cavesLua%" "%DediServer_Location%%cavesLua%"
+
+::	Copy leveldataoverride.lua from the Caves folder
+echo. && echo Copy "%Cluster_Location%%cavesDataLua%" to "%DediServer_Location%%cavesDataLua%"
+copy /b/v/y "%Cluster_Location%%cavesDataLua%" "%DediServer_Location%%cavesDataLua%"
 
 ::	Replace dedicated_server_mods_setup.lua with the original blank one
 echo. && echo Restore "%serverLua%" file to its original state
@@ -58,10 +68,10 @@ echo.
 echo 	File restoration complete
 
 :: 	Import the workshop IDs from modoverrides.lua into dedicated_server_mods_setup.lua
-echo. && echo Import workshop-id's from "%DediServer_Location%%masterLua%" into "%serverLua%"
+echo. && echo Import workshop-id's from "%DediServer_Location%%masterModLua%" into "%serverLua%"
 setlocal enableDelayedExpansion
 set /a count = 0
-for /f delims^=^] %%a in ('findstr /r "workshop-" "%DediServer_Location%%masterLua%" ') do (
+for /f delims^=^] %%a in ('findstr /r "workshop-" "%DediServer_Location%%masterModLua%" ') do (
 	set match=%%a
 	(for /f delims^=^" %%b in ("!match:~13!") do (
 		set wsid=%%b
